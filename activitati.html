@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Activități - White Lotus</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="is-preload">
+
+
+  <!-- Header -->
+<!-- Header -->
+<header id="header">
+	<h1><a href="index.html">The White Lotus</a></h1>
+	<nav>
+		<ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="activitati.html">Activities</a></li>
+        <li><a href="zone.html">Mind & Body</a></li>
+        <li><a href="accommodation.php">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.php">Login</a></li>
+      </ul>
+		</ul>
+	</nav>
+</header>
+
+  <!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+
+  <!-- Conținut -->
+  <section class="main style1" style="padding: 100px; background: #fff; color: #000;">
+    <div class="content">
+      <header>
+        <h2>Activities</h2>
+      </header>
+      <p>Costumers favourite activities</p>
+    </div>
+  </section>
+  <section class="main style1" style="padding: 100px; background: #fff; color: #000;">
+	<div class="content">
+		<header>
+			<h2>White Lotus Activities We Offer:</h2>
+			<p>Unforgettable experiences:</p>
+		</header>
+
+		<ul>
+			<li>🏖 Private beach & lounges</li>
+			<li>🏊 Exterior & interior pools </li>
+			<li>🧘 Yoga și wellness sessions</li>
+			<li>🚲 Biking tours around the Island</li>
+			<li>🎣 Sportive fishing</li>
+			<li>🎨 Painting & pottery classes</li>
+		</ul>
+	</div>
+</section>
+<section class="pottery-section fullscreen">
+  <div class="slideshow-container">
+  
+    <div class="slide fade">
+      <img src="images/activitati/olarit/potterystudio1.jpg" class="slide-img" />
+      <div class="text">Pottery Studio</div>
+    </div>
+  
+    <div class="slide fade">
+      <img src="images/activitati/olarit/potterystudio2.jpg" class="slide-img" />
+      <div class="text">Form, create, relax</div>
+    </div>
+  
+    <div class="slide fade">
+      <img src="images/activitati/olarit/potterystudio3.jpg" class="slide-img" />
+      <div class="text">Authentic experience in a Luxury Studio</div>
+    </div>
+  
+    <!-- Săgețile pentru navigare -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+</section>
+
+<script>
+  let slideIndex = 0;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function showSlides(n) {
+    let slides = document.getElementsByClassName("slide");
+    if (n >= slides.length) slideIndex = 0;
+    if (n < 0) slideIndex = slides.length - 1;
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
+  }
+</script>
+
+<style>
+  /* Stilizare pentru săgeți */
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+</style>
+
+  
+  <style>
+    .pottery-section {
+      position: relative;
+      height: 100vh;
+      background: #000;
+      overflow: hidden;
+    }
+  
+    .slideshow-container {
+      height: 100%;
+      position: relative;
+    }
+  
+    .slide {
+      display: none;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+    }
+  
+    .slide-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .text {
+      color: #fff;
+      font-size: 2em;
+      font-family: 'Georgia', serif;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      position: absolute;
+      bottom: 10%;
+      left: 5%;
+      border-radius: 10px;
+    }
+  
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      font-size: 3em;
+      padding: 10px;
+      color: white;
+      user-select: none;
+      transform: translateY(-50%);
+    }
+  
+    .prev { left: 20px; }
+    .next { right: 20px; }
+  
+    .fade {
+      animation: fade 1s;
+    }
+  
+    @keyframes fade {
+      from { opacity: .4; }
+      to { opacity: 1; }
+    }
+  </style>
+<section class="land-section fullscreen">
+    <div class="slideshow-container-land">
+  
+      <div class="slide-land fade">
+        <img src="images/activitati/peuscat/hanatour.jpg" class="slide-img" />
+        <div class="text">Guided tour around the Maui Island</div>
+      </div>
+  
+      <div class="slide-land fade">
+        <img src="images/activitati/peuscat/sunrisebiketour.jpg" class="slide-img" />
+        <div class="text">Bike riding tour at sunset</div>
+      </div>
+  
+      <div class="slide-land fade">
+        <img src="images/activitati/peuscat/hiking1.jpg" class="slide-img" />
+        <div class="text">Mountain hikes & trails</div>
+      </div>
+  
+      <div class="slide-land fade">
+        <img src="images/activitati/peuscat/zipline1.jpg" class="slide-img" />
+        <div class="text">Panoramic ziplines</div>
+      </div>
+  
+      <div class="slide-land fade">
+        <img src="images/activitati/peuscat/tenis1.jpg" class="slide-img" />
+        <div class="text">Tennis & champagne at noon </div>
+      </div>
+  
+      <a class="prev" onclick="plusSlidesLand(-1)">❮</a>
+      <a class="next" onclick="plusSlidesLand(1)">❯</a>
+    </div>
+  </section>
+  
+  <script>
+    let slideIndexLand = 0;
+    showSlidesLand(slideIndexLand);
+  
+    function plusSlidesLand(n) {
+      showSlidesLand(slideIndexLand += n);
+    }
+  
+    function showSlidesLand(n) {
+      let slides = document.getElementsByClassName("slide-land");
+      if (n >= slides.length) slideIndexLand = 0;
+      if (n < 0) slideIndexLand = slides.length - 1;
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndexLand].style.display = "block";
+    }
+  </script>
+  
+  <style>
+    .land-section {
+      position: relative;
+      height: 100vh;
+      background: #000;
+      overflow: hidden;
+    }
+  
+    .slideshow-container-land {
+      height: 100%;
+      position: relative;
+    }
+  
+    .slide-land {
+      display: none;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+    }
+  
+    .slide-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .text {
+      color: #fff;
+      font-size: 2em;
+      font-family: 'Georgia', serif;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      position: absolute;
+      bottom: 10%;
+      left: 5%;
+      border-radius: 10px;
+    }
+  
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      font-size: 3em;
+      padding: 10px;
+      color: white;
+      user-select: none;
+      transform: translateY(-50%);
+    }
+  
+    .prev { left: 20px; }
+    .next { right: 20px; }
+  
+    .fade {
+      animation: fade 1s;
+    }
+  
+    @keyframes fade {
+      from { opacity: .4; }
+      to { opacity: 1; }
+    }
+  </style>
+  <section class="water-section fullscreen">
+    <div class="slideshow-container-water">
+    
+      <div class="slide-water fade">
+        <img src="images/activitati/peapa/yacht1.jpg" class="slide-img" />
+        <div class="text">Private Yacht tours</div>
+      </div>
+    
+      <div class="slide-water fade">
+        <img src="images/activitati/peapa/hawaii1.jpg" class="slide-img" />
+        <div class="text">Hawaiian Surf</div>
+      </div>
+    
+      <div class="slide-water fade">
+        <img src="images/activitati/peapa/swimdolphins.jpg" class="slide-img" />
+        <div class="text">Swim with dolphins</div>
+      </div>
+    
+      <div class="slide-water fade">
+        <img src="images/activitati/peapa/swimturtules.jpg" class="slide-img" />
+        <div class="text">Meet the true Locals</div>
+      </div>
+    
+      <div class="slide-water fade">
+        <img src="images/activitati/peapa/coralreef1.jpeg" class="slide-img" />
+        <div class="text">Explore the reefs</div>
+      </div>
+  
+      <div class="slide-water fade">
+        <section style="text-align: center; padding: 40px 0;">
+          <video width="1000" height="600" controls autoplay muted>
+            <source src="videos/recifi.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </section>
+        <div class="text">Explore the colorful reefs of Hawaii</div>
+      </div>
+  
+      <!-- Săgețile pentru navigare -->
+      <a class="prev" onclick="plusSlidesWater(-1)">❮</a>
+      <a class="next" onclick="plusSlidesWater(1)">❯</a>
+    </div>
+  </section>
+  
+  <script>
+    let slideIndexWater = 0;
+    showSlidesWater(slideIndexWater);
+    
+    function plusSlidesWater(n) {
+      showSlidesWater(slideIndexWater += n);
+    }
+    
+    function showSlidesWater(n) {
+      let slides = document.getElementsByClassName("slide-water");
+      if (n >= slides.length) slideIndexWater = 0;
+      if (n < 0) slideIndexWater = slides.length - 1;
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndexWater].style.display = "block";
+    }
+  </script>
+  
+  <style>
+    /* Stilizare pentru săgețile de navigare */
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.3s;
+      cursor: pointer;
+      user-select: none;
+    }
+  
+    .next {
+      right: 0;
+    }
+  
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  </style>
+  
+  <style>
+    .water-section {
+      position: relative;
+      height: 100vh;
+      background: #001d2e;
+      overflow: hidden;
+    }
+  
+    .slideshow-container-water {
+      height: 100%;
+      position: relative;
+    }
+  
+    .slide-water {
+      display: none;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+    }
+  
+    .slide-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .text {
+      color: #fff;
+      font-size: 2em;
+      font-family: 'Georgia', serif;
+      background: rgba(0,0,0,0.4);
+      padding: 20px;
+      position: absolute;
+      bottom: 10%;
+      left: 5%;
+      border-radius: 10px;
+    }
+  
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      font-size: 3em;
+      padding: 10px;
+      color: white;
+      user-select: none;
+      transform: translateY(-50%);
+    }
+  
+    .prev { left: 20px; }
+    .next { right: 20px; }
+  
+    .fade {
+      animation: fade 1s;
+    }
+  
+    @keyframes fade {
+      from { opacity: .4; }
+      to { opacity: 1; }
+    }
+  </style>
+  
+  
+
+<!-- Footer -->
+<footer id="footer">
+  <ul class="menu">
+    <li>&copy; White Lotus</li>
+    <li>Design: <a href="https://html5up.net">Maria Asandei ✨</a></li>
+  </ul>
+
+  <!-- Background Music -->
+  <div id="music-player">
+    <button id="play-pause">Play</button>
+    <button id="replay">Replay</button>
+    
+    <input type="range" id="progress-bar" value="0" max="100" step="0.1">
+    <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+
+    <audio id="background-music">
+      <source src="feeltherainonyourskin.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</footer>
+
+<script>
+  var audio = document.getElementById("background-music");
+  var playPauseButton = document.getElementById("play-pause");
+  var replayButton = document.getElementById("replay");
+  var progressBar = document.getElementById("progress-bar");
+  var currentTimeDisplay = document.getElementById("current-time");
+  var durationDisplay = document.getElementById("duration");
+
+  // Set the duration display when the audio is loaded
+  audio.addEventListener('loadedmetadata', function() {
+    durationDisplay.textContent = formatTime(audio.duration);
+  });
+
+  // Play/Pause button functionality
+  playPauseButton.addEventListener('click', function() {
+    if (audio.paused) {
+      audio.play();
+      playPauseButton.textContent = 'Pause';
+    } else {
+      audio.pause();
+      playPauseButton.textContent = 'Play';
+    }
+  });
+
+  // Replay button functionality
+  replayButton.addEventListener('click', function() {
+    audio.currentTime = 0;  // Go back to the start
+    audio.play();
+    playPauseButton.textContent = 'Pause';
+  });
+
+  // Update the progress bar and current time display
+  audio.addEventListener('timeupdate', function() {
+    var progress = (audio.currentTime / audio.duration) * 100;
+    progressBar.value = progress;
+    currentTimeDisplay.textContent = formatTime(audio.currentTime);
+  });
+
+  // Allow the user to drag the progress bar to change the audio time
+  progressBar.addEventListener('input', function() {
+    var newTime = (progressBar.value / 100) * audio.duration;
+    audio.currentTime = newTime;
+  });
+
+  // Function to format the time (e.g. 01:23)
+  function formatTime(seconds) {
+    var minutes = Math.floor(seconds / 60);
+    var seconds = Math.floor(seconds % 60);
+    return minutes.toString().padStart(2, '0') + ':' + seconds.toString().padStart(2, '0');
+  }
+</script>
+
+
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
